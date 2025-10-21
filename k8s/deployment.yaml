@@ -20,7 +20,7 @@ spec:
           image: 669443521868.dkr.ecr.ap-south-1.amazonaws.com/sampleapp:10
    # we'll update this from Jenkins
           ports:
-            - containerPort: 5000
+            - containerPort: 8080
           readinessProbe:
             httpGet:
               path: /
