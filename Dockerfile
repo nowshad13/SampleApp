@@ -12,3 +12,6 @@ EXPOSE 8080
 ENTRYPOINT ["dotnet", "DbConnectionTester.dll"]
 
 
+
+
+
