@@ -10,3 +10,5 @@ WORKDIR /app
 COPY --from=BUILD /src/publish /app
 EXPOSE 8080
 ENTRYPOINT ["dotnet", "DbConnectionTester.dll"]
+
+
