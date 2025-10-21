@@ -17,7 +17,8 @@ spec:
     spec:
       containers:
         - name: sampleapp
-          image: <ECR-URL>:latest   # we'll update this from Jenkins
+          image: 669443521868.dkr.ecr.ap-south-1.amazonaws.com/sampleapp:latest
+   # we'll update this from Jenkins
           ports:
             - containerPort: 8080
           readinessProbe:
