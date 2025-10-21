@@ -8,5 +8,5 @@ RUN dotnet publish "app/DbConnectionTester.csproj" -c Release -o /src/publish
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
 WORKDIR /app
 COPY --from=BUILD /src/publish /app
-EXPOSE 8080
+EXPOSE 5000
 ENTRYPOINT ["dotnet", "DbConnectionTester.dll"]
